@@ -1,0 +1,12 @@
+body{
+  background-color:#ECE8E5;
+}
+#footer div.container-fluid,
+#header div.container-fluid{
+  background-color: #AF8686;
+  border-radius: 20px;
+}
+img.logo{
+  border-radius: 50%;
+  height: 50px;
+}

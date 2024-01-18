@@ -1,0 +1,28 @@
+<%- include("partials/header.ejs") %>
+
+  <form class="row container" action="/create" method="POST">
+    <div class="mx-4 col-lg-4">
+      <label for="title" class="form-label">Title</label>
+      <input type="text" name="title" class="form-control" id="title" placeholder="Title">
+    </div>
+    <div class="mx-4 col-lg-4">
+      <label for="author" class="form-label">Author</label>
+      <input type="text" name="author" class="form-control" id="author" placeholder="Author">
+    </div>
+    <select name="category" class="form-select col-2 mx-4 my-4 " aria-label="Default select example">
+      <option selected>Category</option>
+      <option value="1">Food</option>
+      <option value="2">Travel</option>
+      <option value="3">Motivational</option>
+    </select>
+    <div class="mx-4 my-3">
+      <label for="content" class="form-label">Write here</label>
+      <textarea class="form-control" id="content" name="content" rows="4" ></textarea>
+    </div>
+    <div class="col-4 mx-4">
+      <button type="submit" class="btn btn-outline-dark">Post</button>
+    </div>
+</form>
+
+
+<%- include("partials/footer.ejs") %>
