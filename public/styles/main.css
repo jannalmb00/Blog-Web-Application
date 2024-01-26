@@ -1,10 +1,20 @@
 body{
   background-color:#ECE8E5;
+  height: 100vh; 
+}
+#body div.headline{
+  background-color: rgb(59, 103, 168);
+
+}
+#footer{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  margin-top: 20%;
 }
 #footer div.container-fluid,
 #header div.container-fluid{
   background-color: #AF8686;
-  border-radius: 20px;
 }
 img.logo{
   border-radius: 50%;

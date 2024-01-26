@@ -1,11 +1,11 @@
 <%- include("partials/header.ejs") %>
 
 <section id="body">
-  <div class="p-4 p-md-5 mb-4 rounded text-body-emphasis bg-body-secondary">
-    <div class="col-lg-6 px-0">
-      <h1 class="display-4 fst-italic">Fukouka, Japan Travel Diary</h1>
-      <p class="lead my-3">Multiple lines of text that form the lede, informing new readers quickly and efficiently about what’s most interesting in this post’s contents.</p>
-      <p class="lead mb-0"><a href="#" class="text-body-emphasis fw-bold">Continue reading...</a></p>
+  <div class="p-4 p-md-5 mb-4 rounded text-body-emphasis bg-body-secondary headline">
+    <div class="col-lg-6 px-0 ">
+      <h1 class="display-4 fst-italic">2023 Fukuoka, Japan Travel</h1>
+      <p class="lead my-3">Fukuoka is a vibrant and culturally rich city located on the northern shore of the island of Kyushu in Japan. </p>
+      <p class="lead mb-0"><a href="/fukuoka" class="text-body-emphasis fw-bold">Continue reading...</a></p>
     </div>
   </div>
   <h3 class="pb-4 mb-4 mx-4  fst-italic border-bottom">
@@ -20,7 +20,7 @@
             <ul class="d-flex list-unstyled mt-auto">
               <li class="me-auto">
                 <p>Author: Janna Lomibao</p>
-                <a href="">Continue reading ></a>
+                <a href="/TravelBucket">Continue reading ></a>
               </li>
               <li class="d-flex align-items-center me-3">
                 <img class="logo" src="./images/News (1).png" alt="logo">
@@ -41,7 +41,7 @@
             <ul class="d-flex list-unstyled mt-auto">
               <li class="me-auto">
                 <p>Author: Jan Armas</p>
-                <a href="">Continue reading ></a>
+                <a href="/breakfastIdeas">Continue reading ></a>
               </li>
               <li class="d-flex align-items-center me-3">
                 <img class="logo" src="./images/News (1).png" alt="logo">
@@ -62,7 +62,7 @@
             <ul class="d-flex list-unstyled mt-auto">
               <li class="me-auto">
                 <p>Author: Victoria Miguel</p>
-                <a href="">Continue reading ></a>
+                <a href="/yoga">Continue reading ></a>
               </li>
               <li class="d-flex align-items-center me-3">
                 <img class="logo" src="./images/News (1).png" alt="logo">
@@ -79,7 +79,6 @@
   </div>
   <h3 class="pb-4 mb-4 mx-4 fst-italic border-bottom">
     New posts
-    
   </h3>
   <div class="container-fluid px-4 py-3" id="custom-cards">
     <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
@@ -96,7 +95,7 @@
               <ul class="d-flex list-unstyled mt-auto">
                 <li class="me-auto">
                   <p>Author: <%= locals.posts[i].author %></p>
-                  <a href="<%= /* Add link to the post */ %>">Continue reading ></a>
+                  <a href="/yoga">Continue reading ></a>
                 </li>
                 <li class="d-flex align-items-center me-3">
                   <img class="logo" src="./images/News (1).png" alt="logo">

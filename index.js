@@ -25,7 +25,7 @@ app.post("/create",(req,res)=>{
               "author": author,
               "category":selectedCategory[category-1],
               "content":content});
-  console.log(posts[0]);
+  
   res.render("index.ejs", { posts: posts });
             
 })
@@ -38,6 +38,26 @@ app.get("/food",(req,res)=>{
 app.get("/motivational",(req,res)=>{
   res.render("motivational.ejs");
 });
+app.get("/post",(req,res)=>{
+  res.render("post.ejs")
+});
+//posts
+app.get("/fukuoka",(req,res)=>{
+  res.render("fukuoka.ejs")
+});
+app.get("/TravelBucket",(req,res)=>{
+  res.render("travelBucket.ejs")
+});
+app.get("/breakfastIdeas",(req,res)=>{
+  res.render("breakfastIdeas.ejs")
+});
+app.get("/yoga",(req,res)=>{
+  res.render("yoga.ejs")
+});
+app.get("/newPost",(req,res)=>{
+  res.render("newPost.ejs")
+});
+
 
 app.listen(port, ()=>{
   console.log(`Listening on port ${port}`);
